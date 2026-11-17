@@ -1,1 +1,2 @@
 certifi
+scikit-learn
