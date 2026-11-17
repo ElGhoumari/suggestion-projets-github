@@ -12,9 +12,12 @@ def main():
     repositories = donnees["items"]
 
     print(f"Repositories récupérés : {len(repositories)}")
-    print(f"Résultats annoncés par GitHub : {donnees['total_count']}")
-    print(f"Recherche incomplète : {donnees['incomplete_results']}")
-
+    for bilan in donnees["recherches"]:
+        print(
+            f"Recherche : {bilan['recherche']} | "
+            f"Résultats reçus : {bilan['nombre_recupere']} | "
+            f"Incomplète : {bilan['incomplete_results']}"
+        )
     descriptions_absentes = 0
     topics_absents = 0
     identifiants = set()

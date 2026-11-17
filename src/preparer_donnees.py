@@ -20,6 +20,9 @@ def preparer_repositories(repositories):
         topics = repository.get("topics") or []
         langage = repository.get("language") or ""
 
+        if not description and not topics:
+            continue
+
         texte = " ".join(
             " ".join([description, " ".join(topics), langage]).split()
         )

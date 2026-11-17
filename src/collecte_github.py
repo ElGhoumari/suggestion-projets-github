@@ -1,16 +1,18 @@
 import json
+import ssl
+import time
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
-import ssl
+
 import certifi
 
 
-def recuperer_repositories():
+def recuperer_repositories(recherche):
     parametres = {
-        "q": "machine learning fork:false archived:false",
-        "per_page": 10,
+        "q": f"{recherche} fork:false archived:false",
+        "per_page": 20,
     }
 
     url = (
@@ -44,28 +46,58 @@ def enregistrer_donnees(donnees):
 
 
 def main():
-    try:
-        donnees = recuperer_repositories()
-    except HTTPError as erreur:
-        print(f"Erreur GitHub : HTTP {erreur.code}.")
-        if erreur.code in (403, 429):
-            print("L’accès peut être limité par le quota de requêtes.")
-        return
-    except (URLError, TimeoutError) as erreur:
-        print(f"Impossible de contacter GitHub : {erreur}")
-        return
+    recherches = [
+        "machine learning",
+        "algorithmic trading",
+        "speech recognition",
+        "computer vision",
+        "web framework",
+    ]
 
-    repositories = donnees["items"]
+    projets_par_id = {}
+    bilan_recherches = []
 
-    for repository in repositories:
-        print(repository["full_name"])
-        print(repository["description"] or "Description absente")
-        print()
+    for position, recherche in enumerate(recherches):
+        print(f"Collecte : {recherche}")
 
-    fichier = enregistrer_donnees(donnees)
+        try:
+            donnees = recuperer_repositories(recherche)
+        except HTTPError as erreur:
+            print(f"Erreur GitHub : HTTP {erreur.code}.")
+            print("Collecte interrompue. Le fichier précédent est conservé.")
+            return
+        except (URLError, TimeoutError) as erreur:
+            print(f"Impossible de contacter GitHub : {erreur}")
+            print("Le fichier précédent est conservé.")
+            return
 
-    print(f"{len(repositories)} repositories récupérés.")
-    print(f"Données enregistrées dans : {fichier}")
+        repositories = donnees["items"]
+
+        for repository in repositories:
+            projets_par_id[repository["id"]] = repository
+
+        bilan_recherches.append({
+            "recherche": recherche,
+            "total_count": donnees["total_count"],
+            "incomplete_results": donnees["incomplete_results"],
+            "nombre_recupere": len(repositories),
+        })
+
+        print(f"  {len(repositories)} résultats reçus.")
+
+        if position < len(recherches) - 1:
+            time.sleep(7)
+
+    resultat = {
+        "nombre_repositories": len(projets_par_id),
+        "recherches": bilan_recherches,
+        "items": list(projets_par_id.values()),
+    }
+
+    fichier = enregistrer_donnees(resultat)
+
+    print(f"\n{len(projets_par_id)} repositories uniques enregistrés.")
+    print(f"Fichier : {fichier}")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,5 @@
 import json
+import argparse
 from pathlib import Path
 
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -53,8 +54,17 @@ def recommander(projets, nom_projet, nombre=5):
 
 
 def main():
+    analyseur = argparse.ArgumentParser(
+        description="Recommander des repositories GitHub similaires."
+    )
+    analyseur.add_argument(
+        "repository",
+        help="Nom du repository, par exemple organisation/projet",
+    )
+    arguments = analyseur.parse_args()
+
     projets = charger_projets()
-    nom_projet = "stefan-jansen/machine-learning-for-trading"
+    nom_projet = arguments.repository
 
     resultats = recommander(projets, nom_projet)
 
