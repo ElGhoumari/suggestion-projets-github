@@ -1,0 +1,15 @@
+# Environnement Python
+env-projet-big-data/
+
+# Fichiers temporaires Python
+__pycache__/
+*.pyc
+
+# Configuration locale et secrets
+.env
+
+# Fichiers macOS
+.DS_Store
+
+# Données collectées
+data/
