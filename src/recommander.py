@@ -6,9 +6,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-def charger_projets():
+def charger_projets(avec_readme=False):
     racine = Path(__file__).resolve().parent.parent
-    fichier = racine / "data" / "prepare" / "repositories.json"
+    version = "avec" if avec_readme else "sans"
+    fichier = racine / "data" / "prepare" / f"repositories_{version}_readme.json"
 
     with fichier.open(encoding="utf-8") as entree:
         return json.load(entree)
@@ -61,13 +62,19 @@ def main():
         "repository",
         help="Nom du repository, par exemple organisation/projet",
     )
+    analyseur.add_argument(
+        "--avec-readme", action="store_true",
+        help="Utiliser les textes enrichis par les README nettoyés.",
+    )
     arguments = analyseur.parse_args()
 
-    projets = charger_projets()
+    projets = charger_projets(arguments.avec_readme)
     nom_projet = arguments.repository
 
     resultats = recommander(projets, nom_projet)
 
+    version = "avec README" if arguments.avec_readme else "sans README"
+    print(f"Version : {version} ; {len(projets)} candidats")
     print(f"Projets proches de : {nom_projet}\n")
 
     for position, resultat in enumerate(resultats, start=1):

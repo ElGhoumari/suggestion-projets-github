@@ -1,0 +1,346 @@
+{
+  "date_generation": "2026-11-19T09:54:24.596650+00:00",
+  "nombre_projets": 1037,
+  "corpus_sha256": {
+    "sans": "3801d73da53f9e05530971d230c1fd0e1bfa6d2536a9883c0347064725fde15c",
+    "avec": "7af4d425efe4a75279fe092a000ac4d443a694b59b16e5486b552098fc37a453"
+  },
+  "resultats": {
+    "stefan-jansen/machine-learning-for-trading": {
+      "sans_readme": [
+        {
+          "nom": "edtechre/pybroker",
+          "url": "https://github.com/edtechre/pybroker",
+          "score": 0.5823728143767645
+        },
+        {
+          "nom": "PyPatel/Machine-Learning-and-AI-in-Trading",
+          "url": "https://github.com/PyPatel/Machine-Learning-and-AI-in-Trading",
+          "score": 0.45879030864229375
+        },
+        {
+          "nom": "SoftAlgoTrade/TradingStrategies",
+          "url": "https://github.com/SoftAlgoTrade/TradingStrategies",
+          "score": 0.4143932589277276
+        },
+        {
+          "nom": "coding-kitties/investing-algorithm-framework",
+          "url": "https://github.com/coding-kitties/investing-algorithm-framework",
+          "score": 0.4063005240524946
+        },
+        {
+          "nom": "firmai/financial-machine-learning",
+          "url": "https://github.com/firmai/financial-machine-learning",
+          "score": 0.3972712543528187
+        }
+      ],
+      "avec_readme": [
+        {
+          "nom": "PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+          "url": "https://github.com/PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+          "score": 0.5351918966051783
+        },
+        {
+          "nom": "PacktPublishing/Hands-On-Machine-Learning-for-Algorithmic-Trading-sample",
+          "url": "https://github.com/PacktPublishing/Hands-On-Machine-Learning-for-Algorithmic-Trading-sample",
+          "score": 0.3785603585668439
+        },
+        {
+          "nom": "PacktPublishing/Hands-On-Machine-Learning-for-Algorithmic-Trading",
+          "url": "https://github.com/PacktPublishing/Hands-On-Machine-Learning-for-Algorithmic-Trading",
+          "score": 0.373949148457596
+        },
+        {
+          "nom": "PacktPublishing/Python-for-Algorithmic-Trading-Cookbook-Second-Edition",
+          "url": "https://github.com/PacktPublishing/Python-for-Algorithmic-Trading-Cookbook-Second-Edition",
+          "score": 0.3681284415414635
+        },
+        {
+          "nom": "coding-kitties/investing-algorithm-framework",
+          "url": "https://github.com/coding-kitties/investing-algorithm-framework",
+          "score": 0.3609480678244566
+        }
+      ]
+    },
+    "openai/whisper": {
+      "sans_readme": [
+        {
+          "nom": "SpeechColab/Leaderboard",
+          "url": "https://github.com/SpeechColab/Leaderboard",
+          "score": 0.27658021659785925
+        },
+        {
+          "nom": "julius-speech/julius",
+          "url": "https://github.com/julius-speech/julius",
+          "score": 0.24208926855006102
+        },
+        {
+          "nom": "SpeechColab/GigaSpeech",
+          "url": "https://github.com/SpeechColab/GigaSpeech",
+          "score": 0.23244355482008236
+        },
+        {
+          "nom": "espressif/esp-sr",
+          "url": "https://github.com/espressif/esp-sr",
+          "score": 0.23093010013459414
+        },
+        {
+          "nom": "amaas/rnn-speech-denoising",
+          "url": "https://github.com/amaas/rnn-speech-denoising",
+          "score": 0.1998049750441592
+        }
+      ],
+      "avec_readme": [
+        {
+          "nom": "linto-ai/whisper-timestamped",
+          "url": "https://github.com/linto-ai/whisper-timestamped",
+          "score": 0.4645308395576804
+        },
+        {
+          "nom": "huggingface/distil-whisper",
+          "url": "https://github.com/huggingface/distil-whisper",
+          "score": 0.433148794396284
+        },
+        {
+          "nom": "savbell/whisper-writer",
+          "url": "https://github.com/savbell/whisper-writer",
+          "score": 0.4054023723636054
+        },
+        {
+          "nom": "douglas125/SpeechCmdRecognition",
+          "url": "https://github.com/douglas125/SpeechCmdRecognition",
+          "score": 0.3964296109891725
+        },
+        {
+          "nom": "m-bain/whisperX",
+          "url": "https://github.com/m-bain/whisperX",
+          "score": 0.3934715564747145
+        }
+      ]
+    },
+    "wepe/MachineLearning": {
+      "sans_readme": [
+        {
+          "nom": "vivienzou1/DL-Notes-for-Interview",
+          "url": "https://github.com/vivienzou1/DL-Notes-for-Interview",
+          "score": 0.6115241925049725
+        },
+        {
+          "nom": "mdozmorov/MachineLearning_notes",
+          "url": "https://github.com/mdozmorov/MachineLearning_notes",
+          "score": 0.5952676977300949
+        },
+        {
+          "nom": "RedstoneWill/HsuanTienLin_MachineLearning",
+          "url": "https://github.com/RedstoneWill/HsuanTienLin_MachineLearning",
+          "score": 0.49257079679791016
+        },
+        {
+          "nom": "HadXu/machine-learning",
+          "url": "https://github.com/HadXu/machine-learning",
+          "score": 0.4637292606248232
+        },
+        {
+          "nom": "bfortuner/ml-glossary",
+          "url": "https://github.com/bfortuner/ml-glossary",
+          "score": 0.4031963619898123
+        }
+      ],
+      "avec_readme": [
+        {
+          "nom": "ljpzzz/machinelearning",
+          "url": "https://github.com/ljpzzz/machinelearning",
+          "score": 0.10398302335659819
+        },
+        {
+          "nom": "ujjwalkarn/Machine-Learning-Tutorials",
+          "url": "https://github.com/ujjwalkarn/Machine-Learning-Tutorials",
+          "score": 0.06956052500867661
+        },
+        {
+          "nom": "TeFuirnever/Machine-Learning-in-Action",
+          "url": "https://github.com/TeFuirnever/Machine-Learning-in-Action",
+          "score": 0.06952408542388039
+        },
+        {
+          "nom": "gyy8426/Computer_Vision_primer",
+          "url": "https://github.com/gyy8426/Computer_Vision_primer",
+          "score": 0.0514845315591
+        },
+        {
+          "nom": "susanli2016/Machine-Learning-with-Python",
+          "url": "https://github.com/susanli2016/Machine-Learning-with-Python",
+          "score": 0.051467658870660585
+        }
+      ]
+    },
+    "opencv/opencv": {
+      "sans_readme": [
+        {
+          "nom": "luispedro/mahotas",
+          "url": "https://github.com/luispedro/mahotas",
+          "score": 0.6676607621729234
+        },
+        {
+          "nom": "Alireza-Akhavan/class.vision",
+          "url": "https://github.com/Alireza-Akhavan/class.vision",
+          "score": 0.4453516055557611
+        },
+        {
+          "nom": "carlosmccosta/Car-Detection",
+          "url": "https://github.com/carlosmccosta/Car-Detection",
+          "score": 0.4208120031461033
+        },
+        {
+          "nom": "osrf/ovc",
+          "url": "https://github.com/osrf/ovc",
+          "score": 0.40043036064393794
+        },
+        {
+          "nom": "YunchuZhang/PyImageSearch-Gurus-Course",
+          "url": "https://github.com/YunchuZhang/PyImageSearch-Gurus-Course",
+          "score": 0.38934260384405817
+        }
+      ],
+      "avec_readme": [
+        {
+          "nom": "rssr25/Computer-Vision",
+          "url": "https://github.com/rssr25/Computer-Vision",
+          "score": 0.49507293123841023
+        },
+        {
+          "nom": "PacktPublishing/Learning-OpenCV-4-Computer-Vision-with-Python-Third-Edition",
+          "url": "https://github.com/PacktPublishing/Learning-OpenCV-4-Computer-Vision-with-Python-Third-Edition",
+          "score": 0.46570239493524684
+        },
+        {
+          "nom": "ClarityCoders/ComputerVision-OpenCV",
+          "url": "https://github.com/ClarityCoders/ComputerVision-OpenCV",
+          "score": 0.46499307499369397
+        },
+        {
+          "nom": "GihanRathnayake/ComputerVision",
+          "url": "https://github.com/GihanRathnayake/ComputerVision",
+          "score": 0.43595609523516793
+        },
+        {
+          "nom": "MasteringOpenCV/code",
+          "url": "https://github.com/MasteringOpenCV/code",
+          "score": 0.42003108313087517
+        }
+      ]
+    },
+    "django/django": {
+      "sans_readme": [
+        {
+          "nom": "dropseed/plain",
+          "url": "https://github.com/dropseed/plain",
+          "score": 0.4692929409288016
+        },
+        {
+          "nom": "encode/django-rest-framework",
+          "url": "https://github.com/encode/django-rest-framework",
+          "score": 0.3400829307359908
+        },
+        {
+          "nom": "manosim/django-rest-framework-docs",
+          "url": "https://github.com/manosim/django-rest-framework-docs",
+          "score": 0.3379427613685825
+        },
+        {
+          "nom": "jfinal/jfinal",
+          "url": "https://github.com/jfinal/jfinal",
+          "score": 0.2912967733922493
+        },
+        {
+          "nom": "softage0/algorithm-trading-webapp",
+          "url": "https://github.com/softage0/algorithm-trading-webapp",
+          "score": 0.2779249132626004
+        }
+      ],
+      "avec_readme": [
+        {
+          "nom": "manosim/django-rest-framework-docs",
+          "url": "https://github.com/manosim/django-rest-framework-docs",
+          "score": 0.47220526140965063
+        },
+        {
+          "nom": "StockSharp/StockSharp",
+          "url": "https://github.com/StockSharp/StockSharp",
+          "score": 0.4205591685097994
+        },
+        {
+          "nom": "encode/django-rest-framework",
+          "url": "https://github.com/encode/django-rest-framework",
+          "score": 0.3507871255603754
+        },
+        {
+          "nom": "clue/framework-x",
+          "url": "https://github.com/clue/framework-x",
+          "score": 0.30008788956432464
+        },
+        {
+          "nom": "torreyleonard/algotrader",
+          "url": "https://github.com/torreyleonard/algotrader",
+          "score": 0.2508515289892311
+        }
+      ]
+    },
+    "edtechre/pybroker": {
+      "sans_readme": [
+        {
+          "nom": "paulperry/quant",
+          "url": "https://github.com/paulperry/quant",
+          "score": 0.5865425405787122
+        },
+        {
+          "nom": "alkalescent/hyperdrive",
+          "url": "https://github.com/alkalescent/hyperdrive",
+          "score": 0.5840642259617769
+        },
+        {
+          "nom": "stefan-jansen/machine-learning-for-trading",
+          "url": "https://github.com/stefan-jansen/machine-learning-for-trading",
+          "score": 0.5823728143767645
+        },
+        {
+          "nom": "PyPatel/Machine-Learning-and-AI-in-Trading",
+          "url": "https://github.com/PyPatel/Machine-Learning-and-AI-in-Trading",
+          "score": 0.5773622045463633
+        },
+        {
+          "nom": "coding-kitties/investing-algorithm-framework",
+          "url": "https://github.com/coding-kitties/investing-algorithm-framework",
+          "score": 0.558288867834995
+        }
+      ],
+      "avec_readme": [
+        {
+          "nom": "AliHabibnia/Algorithmic_Trading_with_Python",
+          "url": "https://github.com/AliHabibnia/Algorithmic_Trading_with_Python",
+          "score": 0.4278139338296377
+        },
+        {
+          "nom": "PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+          "url": "https://github.com/PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+          "score": 0.37273199173161115
+        },
+        {
+          "nom": "joelowj/awesome-algorithmic-trading",
+          "url": "https://github.com/joelowj/awesome-algorithmic-trading",
+          "score": 0.3645697338499739
+        },
+        {
+          "nom": "PacktPublishing/Learn-Algorithmic-Trading",
+          "url": "https://github.com/PacktPublishing/Learn-Algorithmic-Trading",
+          "score": 0.3613930599993514
+        },
+        {
+          "nom": "TheFourGreatErrors/alpha-rptr",
+          "url": "https://github.com/TheFourGreatErrors/alpha-rptr",
+          "score": 0.33682758265456536
+        }
+      ]
+    }
+  }
+}
